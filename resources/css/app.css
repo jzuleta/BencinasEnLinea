@@ -1,0 +1,94 @@
+﻿* {
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+#app-content {
+    padding-top: 94px;
+}
+
+.app-status-bar {
+    background-color: rgba(25, 118, 210, 1);
+    height: 24px;
+}
+
+.app-top-bar {
+    align-items: center;
+    background-color: rgba(33, 150, 243, 1);
+    display: flex;
+    height: 70px;
+    padding: 0 20px;
+}
+
+.top-bar-content {
+    box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.eess-description{
+    line-height: 22px;
+    width: 100%;
+}
+
+.eess-icon {
+   background-image: url("../img/gas_station_white.png");
+    float: left;
+    height: 32px;
+    margin: 5px 20px 0 0;
+    width: 32px;
+}
+
+.eess-name {
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.eess-address {
+    color: white;
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.eess-close {
+    background-image: url("../img/delete_sign.png");
+    height: 24px;
+    position: absolute;
+    right: 15px;
+    top: 36px;
+    width: 24px;
+}
+
+.eess-services-content {
+    align-items: center;
+    background: rgba(245, 245, 245, 1) none repeat scroll 0 0;
+    display: flex;
+    height: 55px;
+}
+
+.icon-services {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 24px;
+}
+
+.icon-gas{
+    background-image:url(../img/gas_pump.png);
+}
+
+.icon-pill{
+    background-image:url(../img/pill.png);
+}
+
+.icon-shop{
+    background-image:url(../img/shop.png);
+}
+
+.icon-support{
+    background-image:url(../img/support.png);
+}
+
+.icon-wc{
+    background-image:url(../img/toilet_bowl.png);
+}
