@@ -1,42 +1,93 @@
 ﻿<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
+<!--[if IE 9]><html class="lt-ie10" lang="en"> <![endif]-->
 <html class="no-js" lang="en">
 
 <head>
-    <meta charset="utf-8">    
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bencinas en Línea</title>    
-    <link type="text/css" rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700">
+    <title>Bencinas en Línea</title>
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css"/>
     <link rel="stylesheet" href="vendors/foundation-5.5.2/css/normalize.css">
-    <link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css">    
+    <link rel="stylesheet" href="vendors/foundation-5.5.2/css/foundation.css">
     <link rel="stylesheet" href="resources/css/app.css">
+    <link rel="stylesheet" href="resources/css/input-style.css"/>
     <script src="vendors/foundation-5.5.2/js/vendor/modernizr.js"></script>
 </head>
 <body>
-    <div id="app-content" class="row">
-        <div class="top-bar-content">
-            <div class="app-status-bar"></div>
-            <div class="app-top-bar">
-                <div class="eess-close"></div>
-                <div class="eess-description">
-                    <div class="eess-icon"></div>
-                    <span class="eess-name">Terpel</span><br />
-                    <span class="eess-address">Domínica 217, Recoleta</span>                    
-                </div>
-            </div>                      
+<div class="top-bar-content">
+    <div class="app-status-bar"></div>
+    <div class="app-top-bar">
+        <div class="eess-close"></div>
+        <div class="eess-description">
+            <div class="eess-icon"></div>
+            <span class="eess-name">Terpel</span><br/>
+            <span class="eess-address">Domínica 217, Recoleta</span>
         </div>
-        <div class="eess-services-content">
-            <div class="small-offset-1 large-offset-1 large-2 small-2 columns icon-services icon-gas"></div> 
-            <div class="large-2 small-2 columns icon-services icon-support"></div> 
-            <div class="large-2 small-2 columns icon-services icon-shop"></div> 
-            <div class="large-2 small-2 columns icon-services icon-wc"></div> 
-            <div class="large-2 small-2 columns end icon-services icon-pill"></div> 
-        </div> 
     </div>
-    <script src="vendors/foundation-5.5.2/js/vendor/jquery.js"></script>
-    <script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
-    <script>
-        $(document).foundation();
-    </script>
+</div>
+<div id="app-content" class="row">
+    <div id="static-map">
+        <img src="http://maps.google.com/maps/api/staticmap?size=640x640&zoom=14&maptype=roadmap&markers=color:green|2+Elizabeth+St,+Melbourne+Victoria+3000+Australia&sensor=false&scale=2"/>
+    </div>
+    <div class="eess-services-content">
+        <div class="small-offset-1 large-offset-1 large-2 small-2 columns icon-services icon-gas"></div>
+        <div class="large-2 small-2 columns icon-services icon-support"></div>
+        <div class="large-2 small-2 columns icon-services icon-shop"></div>
+        <div class="large-2 small-2 columns icon-services icon-wc"></div>
+        <div class="large-2 small-2 columns end icon-services icon-pill"></div>
+    </div>
+    <div id="price-form" class="row">
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="758" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Gasolina 93</label>
+        </div>
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="793" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Gasolina 95</label>
+        </div>
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="0" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Gasolina 97</label>
+        </div>
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="502" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Petróleo Diesel</label>
+        </div>
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="0" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Kerosene</label>
+        </div>
+        <div class="group large-6 small-6 columns">
+            <input type="text" value="399" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>GLP Vehicular</label>
+        </div>
+        <div class="group large-6 small-6 columns end">
+            <input type="text" value="0" required>
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>GNC</label>
+        </div>
+        <div class="large-12 small-12 columns">
+            <a href="#" class="button action-buttons">Enviar información</a>
+        </div>
+    </div>
+</div>
+<script src="vendors/foundation-5.5.2/js/vendor/jquery.js"></script>
+<script src="vendors/foundation-5.5.2/js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
 </body>
 </html>
